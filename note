@@ -1,0 +1,111 @@
+                          
+                          
+                            Angular -( localhost:4200 ) - Front End Development
+
+{
+    project creation: syntax: ng new projec_name --routing
+
+    project run: syntax: ng serve --open
+
+    Component creation: syntax: ng g c Component_name
+
+    service creation: syntax: ng g s service_name
+
+    Directive creation: syntax: ng g d directive_name
+
+    To take Build - ng build --prod
+
+}
+
+                               Angular Concepts
+
+
+             1. Component - { html, css, ts}- Root Component - AppComponent
+
+             2. Module - Root Module - AppModule
+
+             3. Data Binding - data shairing  within component 
+
+                3.1 One Way Binding
+
+                    3.1.1 Component to View 
+
+                        3.1.1.1 String Interpolation: syntax - {{expression}}
+
+                        3.1.1.2 Property Binding - syntax: [binding-target]="binding-source"
+
+                    3.1.2 View to Component
+
+                        3.1.2.1 Event Binding - syntax: (event-name)="function call"
+
+                        3.1.2.2 Event Binding using $event- syntax: (event-name)="function ($event)"
+
+                        3.1.1.3 Template reference variable - syntax : #variable_name
+
+                3.2 Two Way Binding - FormsModule import -[(ngModel)]="variable_name"
+
+             4. Angular Routing - to set path for component
+
+             5. Dependency Injection - data shairing  between  components/classes
+                In constructor :  syntax -  ( access specifies variable_name:dependent class name)
+
+             6. Angular Services - To store reusable / duplicate code within Angular
+
+             7. ngSubmit - use inside form tag, remove event from button tag and 
+                           change type of button as submit
+
+
+             8. Angular Forms
+
+                8.1 Template driven Forms
+
+                8.2 Model driven Forms
+
+                    8.2.1 Reactive Forms - To add Validations - {Add ReactiveFormsModule in app Module}
+                          {Form Group, Form Array , Form Control}
+
+            9. Angular Directive - DOM Manipulation
+
+                9.1 Component Directive 
+
+                9.2 Structural Directive -to add/ remove html tag , preceeded by *
+
+                    9.2.1 ngIf - syntax : *ngIf="condition"
+
+                    9.2.2 ngFor
+
+                    9.2.3 ngSwitch
+
+                9.3 Attribute Directive - to set of style to view
+
+                    9.3.1 In Built - ngClass
+
+                    9.3.2 User defined
+
+            10. local storage - store data permantly in browser
+
+                10.1 setItem - To insert
+
+                10.2 getItem - to get data
+
+                10.3 removeItem 
+
+            11. import HttpClientModule
+
+            12. Asynchronous event - Obeservable- RXJS
+
+                12.1 Resolve state - subscribe()
+
+                12.2 Reject state - catch()
+
+            13. Parent Child Communication
+
+                13.1 Parent to Child - Input decorator
+
+                13.2 Child to Parent - Output decorator
+
+            14. Event Emitter- 
+
+            15. Angular Pipes - 
+
+

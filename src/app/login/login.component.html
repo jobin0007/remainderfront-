@@ -1,0 +1,28 @@
+<style>
+    .btn:hover {
+        background-color: white;
+        color: black;
+    }
+</style>
+
+<body>
+    <h1 class="mt-4" style="color: deepskyblue; text-align: center">User's Details</h1>
+    <div class="box">
+        <u>
+            <h3 class="mt-3">Login</h3>
+        </u>
+        <br>
+        <form [formGroup]=" loginForm" (ngSubmit)="login()" class="mb-5">
+            <label for="us">User Id</label><br>
+            <input type="text" formControlName="user_id" name="user_id" id="us"><br>
+            <div  class="errors ms-4" style="color: black;" *ngIf="(this.loginForm.get('user_id')?.touched||this.loginForm.get('user_id')?.dirty )&& (this.loginForm.get('user_id')?.errors)">Invalid username</div>
+            <label for="pass">Password</label><br>
+            <input class="mb-3" formControlName="pwd" type="password" name="pwd" id="pass"><br>
+            <div style="color: black;" *ngIf="(this.loginForm.get('pwd')?.touched||this.loginForm.get('pwd')?.dirty)&& (this.loginForm.get('pwd')?.errors)">Invalid Password</div>
+
+            <input type="submit" class="mb-3 btn btn-success" value="Open">
+
+        </form>
+        <p style="color:white; align-items: baseline;">New User?<a routerLink="register" style="color: green;">register</a></p></div>
+   
+</body>

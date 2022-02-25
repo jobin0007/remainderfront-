@@ -1,0 +1,40 @@
+.box{
+
+    border: 2px solid black;
+    width:500px;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    box-shadow:  10px 10px 30px ,
+                 9px 9px 10px black;
+    
+    }
+    .pic{
+        width: 190px;
+    }
+
+    form{
+        border: .1px solid black;
+        width: 300px;
+        margin-left: 90px;
+        box-shadow: 10px 10px 30px ,
+                    9px 9px 10px black;
+        font-weight: 550;
+        font-size:large;
+    
+        /* margin-top: auto;
+        margin-bottom: auto; */
+    }
+    input{
+        border-radius: 3px;
+        border: 1.8px solid;
+    }
+    div{
+        color: white;
+    }
+    
+    @media screen {
+        
+    }
+    

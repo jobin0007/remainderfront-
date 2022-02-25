@@ -1,0 +1,35 @@
+<p>dashboard works!</p>
+<style>
+    .btn:hover {
+        background-color: white;
+        color: black;
+    }
+</style>
+
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-outline-danger kl" (click)="logOut()" type="submit">Log Out</button>
+
+          </form>
+        </div>
+      </nav>
+    
+    <h1 class="mt-4" style="color: deepskyblue; text-align: center">User's Details</h1>
+
+    <div class="box">
+        <u>
+
+            <h3 style="color: white;" class="mt-3">Welcome</h3>
+            <br>
+            <h2>{{user}}</h2>
+        </u>
+        <br>
+  
+        </div>
+   
+</body>
